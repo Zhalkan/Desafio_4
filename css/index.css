@@ -33,7 +33,7 @@ body {
      /*tamaño de las columnas*/
     grid-template-columns: repeat(4, 1fr); /* el ancho de la pantalla se divide en 4 y a cada uno le corresponde 1fr*/
     grid-template-rows: 15% 75% 10%; /*tamaño de las 3 filas - header, main y footer*/
-    background-image: linear-gradient(to left top, #252525, #1d1d1d, #161616, #0d0d0d, #000000);
+    background-image: linear-gradient(to right top, #535358, #484857, #3d3c56, #323155, #262653);
 }
 
 header a{
@@ -98,6 +98,10 @@ header .navbar {
     padding: 0 2rem; /*esto es para que quede un pequeño margen a los costados cuando se achique la pantalla, los 2 rem */
 }
 
+header .navbar picture img {
+    animation: rotation 3s ease-in-out infinite;  
+}
+
 header .menu {
     flex-basis: 50%; /*para determinar cuanto del elemento padre va a ocupar el menú*/
     justify-content: space-between;
@@ -106,6 +110,11 @@ header .menu {
 .menu .menu__item .menu__link {
     font-size: 1.8em; /* tamaño letra 18px */
     padding: 1rem; /*10px a todos los lados. Esto sirve para que ponga un padding y se pueda clickear el item no solo en las letras sino cerca también*/
+    transition: all .3s ease-in-out;
+}
+
+.menu .menu__item .menu__link:hover {
+    color: #a7a7a7;
 }
 
 .navbar .sub-menu {
@@ -113,11 +122,20 @@ header .menu {
     position: absolute;
 }
 
+.navbar .menu .menu__item:hover .sub-menu {
+    display: block;
+    background-color: var(--principal)
+}
 
 .menu__item .sub-menu .sub-menu__link{
     padding: 1rem;
     font-size: 1.4em;
     transition: all .3s ease-in-out;
+}
+
+.menu__item .sub-menu .sub-menu__link:hover{
+
+    color: #a7a7a7;
 }
 
 
@@ -291,3 +309,11 @@ header .menu {
         transform: rotate(-360deg);
     }
 }
+
+.rotar {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s; /* don't forget to set a duration! */
+  }
