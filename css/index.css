@@ -33,7 +33,7 @@ body {
      /*tamaño de las columnas*/
     grid-template-columns: repeat(4, 1fr); /* el ancho de la pantalla se divide en 4 y a cada uno le corresponde 1fr*/
     grid-template-rows: 15% 75% 10%; /*tamaño de las 3 filas - header, main y footer*/
-    background-image: linear-gradient(to left top, #252525, #1d1d1d, #161616, #0d0d0d, #000000);
+    background-image: linear-gradient(to right top, #535358, #484857, #3d3c56, #323155, #262653);
 }
 
 header a{
