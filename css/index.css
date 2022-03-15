@@ -98,10 +98,6 @@ header .navbar {
     padding: 0 2rem; /*esto es para que quede un pequeño margen a los costados cuando se achique la pantalla, los 2 rem */
 }
 
-header .navbar picture img {
-    animation: rotation 3s ease-in-out infinite;  
-}
-
 header .menu {
     flex-basis: 50%; /*para determinar cuanto del elemento padre va a ocupar el menú*/
     justify-content: space-between;
@@ -110,11 +106,6 @@ header .menu {
 .menu .menu__item .menu__link {
     font-size: 1.8em; /* tamaño letra 18px */
     padding: 1rem; /*10px a todos los lados. Esto sirve para que ponga un padding y se pueda clickear el item no solo en las letras sino cerca también*/
-    transition: all .3s ease-in-out;
-}
-
-.menu .menu__item .menu__link:hover {
-    color: #a7a7a7;
 }
 
 .navbar .sub-menu {
@@ -122,22 +113,12 @@ header .menu {
     position: absolute;
 }
 
-.navbar .menu .menu__item:hover .sub-menu {
-    display: block;
-    background-color: var(--principal)
-}
 
 .menu__item .sub-menu .sub-menu__link{
     padding: 1rem;
     font-size: 1.4em;
     transition: all .3s ease-in-out;
 }
-
-.menu__item .sub-menu .sub-menu__link:hover{
-
-    color: #a7a7a7;
-}
-
 
 /*Sección principal*/
 
