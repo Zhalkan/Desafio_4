@@ -309,3 +309,11 @@ header .menu {
         transform: rotate(-360deg);
     }
 }
+
+.rotar {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s; /* don't forget to set a duration! */
+  }
